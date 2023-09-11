@@ -22,3 +22,61 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.main{
+  display: flex;
+
+}
+.content{
+  width: 60%;
+  text-align: center;
+  padding: 40px;
+}
+.aside{
+  text-align: center;
+  padding: 40px;
+  width: 40%;
+}
+.link{
+  text-align: center;
+}
+.header{
+  text-align: center;
+}
+.footer{
+  text-align: center;
+}
+.mainG {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentG {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+.asideG {
+  grid-area: aside;
+  text-align: center;
+  padding: 40px;
+}
+
+.footerG {
+  grid-area: footer;
+  text-align: center;
+}
+
+.linkG {
+  text-align: center;
+}
+.headerG {
+  grid-area: header;
+  text-align: center;
+}
+
+.navG {
+  grid-area: nav;
+}
