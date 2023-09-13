@@ -15,11 +15,9 @@ function mapObject(obj, parentKey = "") {
       const newKey = parentKey ? `${parentKey}/${key}` : key;
 
       if (typeof obj[key] === "object" && !Array.isArray(obj[key])) {
-        // Рекурсивно викликаємо функцію для вкладеного об'єкта
         const nestedResult = mapObject(obj[key], newKey);
         result = result + nestedResult;
       } else {
-        // Додаємо значення до карти
         result = result + newKey + ":" + JSON.stringify(obj[key]) + "\n";
       }
     }

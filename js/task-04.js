@@ -19,10 +19,8 @@ const arrayToObject = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     const currentElement = arr[i];
 
-    // Перевіряємо, чи поточний елемент є масивом і має ще елементи
     if (Array.isArray(currentElement) && currentElement.length === 2) {
       const [key, value] = currentElement;
-      // Рекурсивно додаємо ключ та значення до об'єкта
       obj[key] = Array.isArray(value) ? arrayToObject(value) : value;
     }
   }
